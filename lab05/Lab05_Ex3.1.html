@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infographic và video YouTube</title>
+	<style>
+		:root { --primary: #2563eb; --dark: #172033; --light: #f4f7fb; }
+		* { box-sizing: border-box; }
+		body {
+			margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--dark);
+			background: linear-gradient(135deg, #eaf2ff, #f8fafc);
+		}
+		.container { width: min(1100px, 92%); margin: auto; }
+		header { padding: 56px 0 30px; text-align: center; }
+		.tag { color: var(--primary); font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+		h1 { margin: 10px 0; font-size: clamp(2rem, 5vw, 3.5rem); }
+		.intro { max-width: 700px; margin: 0 auto; color: #526074; line-height: 1.7; }
+		.card { background: white; border-radius: 20px; padding: 24px; box-shadow: 0 12px 35px rgba(30, 64, 175, .12); }
+		.infographic { text-align: center; margin-bottom: 34px; }
+		.infographic img { display: block; width: 100%; max-height: 650px; object-fit: contain; border-radius: 12px; }
+		h2 { margin-top: 0; color: var(--primary); }
+		.videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+		.video { overflow: hidden; padding: 0 0 16px; }
+		.video h3, .video p { margin: 14px 18px 0; }
+		.video h3 { font-size: 1.1rem; }
+		.video p { color: #657084; line-height: 1.5; }
+		iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
+		footer { padding: 30px 0 42px; text-align: center; color: #697586; font-size: .9rem; }
+		@media (max-width: 600px) { header { padding-top: 35px; } .card { padding: 16px; } }
+	</style>
+</head>
+<body>
+	<header class="container">
+		<div class="tag">Lab 05 · Nhiệm vụ 3.1</div>
+		<h1>Khám phá qua infographic</h1>
+		<p class="intro">Tổng hợp nội dung trực quan cùng các video YouTube đã giới thiệu ở Nhiệm vụ 2.2, giúp việc học tập trở nên sinh động và dễ ghi nhớ hơn.</p>
+	</header>
+
+	<main class="container">
+		<section class="card infographic">
+			<h2>Infographic tổng quan</h2>
+			<img src="Lab05_Ex2.1.png" alt="Infographic của bài thực hành Lab 05" loading="lazy">
+		</section>
+
+		<section>
+			<h2>Video tham khảo</h2>
+			<div class="videos">
+				<!-- Thay VIDEO_ID_1 và VIDEO_ID_2 bằng mã video YouTube của Nhiệm vụ 2.2 nếu cần. -->
+				<article class="card video">
+					<iframe src=" https://youtube.com/shorts/2K1kxnMywUs?si=j8js_z9KyCQ55pLy
+" title="Video YouTube 1" allowfullscreen loading="lazy"></iframe>
+					<h3>Video 1</h3>
+					<p>Nội dung video được trình bày trong Nhiệm vụ 2.2.</p>
+				</article>
+				<article class="card video">
+					<iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video YouTube 2" allowfullscreen loading="lazy"></iframe>
+					<h3>Video 2</h3>
+					<p>Video tham khảo bổ sung cho chủ đề infographic.</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="container">© 2025 Lab 05 · Infographic: Lab05_Ex2.1.png · Video thuộc bản quyền của chủ sở hữu tương ứng.</footer>
+</body>
+</html>
